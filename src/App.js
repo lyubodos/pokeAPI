@@ -3,6 +3,8 @@ import { useState, useEffect } from 'react';
 import axios from "axios";
 import Pagination from "./components/Pagination";
 
+import "./App.css";
+
 
 function App() {
 
@@ -48,6 +50,7 @@ function App() {
   
   return (
     <>
+      <h1>PokeAPI Data</h1>
       <PokemonList listPoke={pokeList} />
       <Pagination 
       goToNext={nextUrl ? nextPage : null}
